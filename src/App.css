@@ -1,0 +1,90 @@
+
+.app{
+  
+}
+
+.chart-nav-title{
+    color: #ffffff !important;
+  }
+
+  a{
+      text-decoration: none !important;
+  }
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    min-height: 60px;
+    min-width: 100%;
+    height: 60px;
+
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: blueviolet;
+
+}
+
+button:focus, button:active{
+  outline: none;
+}
+
+.addBtn, .deleteBtn{
+  border:none;
+  cursor: pointer;
+  outline: none;
+  padding: 6px;
+  background: none;
+  transition: 06s ease-in-out;
+}
+.addBtn:hover, .deleteBtn:hover{
+ background: gray;
+}
+
+.title{
+  color:blueviolet
+}
+
+.footerSign{
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  color: rgb(220, 20, 177);
+ padding: 10px;
+ margin: 10px;
+ line-height: 1.4;
+ letter-spacing: 0.1em;
+}
+
+/*
+ * ─── LOADER ─────────────────────────────────────────────────────────────────────
+*/
+
+
+  .loader{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: pink;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 100;
+}
+.gear-svg{
+    width: 300px;
+    height: auto;
+    animation: spin 1s linear infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
